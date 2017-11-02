@@ -1,0 +1,26 @@
+.slide.slide--four {
+  display: flex;
+  padding: 40px 0 100px;
+}
+
+.slide.slide--four .slide__inner {
+  //background-color: $colorWhite;
+  //box-shadow: 0px 4px 18px 0px rgba(189,208,223,0.26);
+  border-radius: 8px;
+  padding: 20px 0 0 0 ;
+  height: auto;
+  width: auto;
+}
+
+.slide.slide--four .button {
+  margin: 20px auto 0;
+  width: 170px;
+}
+
+@media (max-width: 767px) {
+
+  .slide.slide--four {
+    padding: 0px 0px 60px 0px
+  }
+
+}

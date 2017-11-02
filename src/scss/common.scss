@@ -1,0 +1,57 @@
+@import "reset";
+@import "formReset";
+@import "colors";
+@import "fonts";
+
+body {
+  background-color: $colorBg;
+  font-family: $PostGroteskBook;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  color: $colorDark;
+  text-rendering: optimizeLegibility;
+   -webkit-font-smoothing: antialiased;
+}
+
+a {
+  color: $colorDark;
+  text-decoration: none;
+  transition: opacity .2s ease;
+}
+
+.button {
+  display: block;
+  height: 44px;
+  line-height: 43px;
+  padding: 0 20px;
+
+  font-family: $PostGroteskMedium;
+  font-size: 13px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: 1px;
+
+  color: $colorWhite;
+  background-color: rgba(104, 192, 248, 1);
+  box-shadow: 0 8px 14px 0 #DEE2E5;
+  border-radius: 8px;
+
+  transform: translate3d(0, 0, 0) scale(1);
+  transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease;
+  -webkit-appearance: none;
+  cursor: pointer;
+}
+
+.button:active {
+  transform: translate3d(0, 0, 0) scale(.99);
+}
+
+.button:hover {
+  background-color: rgba(132, 207, 255, 1);
+}
+
+.button.button--disabled {
+  color: rgba(255, 255, 255, .5);
+  cursor: default;
+}

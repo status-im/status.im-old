@@ -1,0 +1,402 @@
+.slide.slide--three {
+  display: flex;
+  padding: 40px 0 60px;
+}
+
+.slide.slide--three .slide__inner {
+  background-image: linear-gradient(-180deg, #5A6F7E 0%, #445561 100%);
+  box-shadow: 0px 12px 23px 0px rgba(74,92,105,0.33);
+  border-radius: 8px;
+  padding: 50px 0;
+  height: 740px;
+  width: 1080px;
+}
+
+.circles {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  z-index: 500;
+}
+
+.slide__circles {
+  position: absolute;
+  top: 56%;
+  left: 0;
+  width: 1080px;
+  height: 740px;
+}
+
+.slide__circle-wrap {
+  position: absolute;
+  left: 50%;
+  top: 110%;
+  transform: translate3d(-50%, -50%, 0);
+}
+
+.slide__circle {
+  border-radius: 50%;
+  opacity: 0.1;
+  background: #A6B0BA;
+  border: 2px solid #FFFFFF;
+
+  opacity: .1;
+  transform: scale(1) translate3d(0, 0, 0);
+  transition: transform 1s cubic-bezier(0.230, 1.000, 0.320, 1.000), opacity .4s linear;
+}
+
+.slide--shown .slide__circle {
+  //opacity: .1;
+  //transform: scale(1) translate3d(0, 0, 0);
+}
+
+.slide__circle--one .slide__circle {
+  width: 1200px;
+  height: 1200px;
+  transition-delay: .7s;
+}
+
+.slide__circle--two .slide__circle {
+  width: 1000px;
+  height: 1000px;
+  transition-delay: .6s;
+}
+
+.slide__circle--three  .slide__circle {
+  width: 800px;
+  height: 800px;
+  transition-delay: .5s;
+}
+
+.slide__circle--four .slide__circle {
+  width: 600px;
+  height: 600px;
+  transition-delay: .4s;
+}
+
+.slide__circle--five .slide__circle{
+  width: 400px;
+  height: 400px;
+  transition-delay: .3s;
+}
+
+.slide__circle--six .slide__circle{
+  width: 200px;
+  height: 200px;
+  transition-delay: .2s;
+}
+
+
+.points {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 600;
+}
+
+.point {
+  position: absolute;
+  width: 260px;
+}
+
+.point.point--one {
+  top: 198px;
+  left: -50px;
+}
+
+.point.point--two {
+  top: 439px;
+  left: 273px;
+}
+
+.point.point--three {
+  top: 192px;
+  left: 490px;
+}
+
+.point.point--four {
+  top: 336px;
+  left: 844px;
+}
+
+.point__point {
+  width: 20px;
+  height: 20px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: #3AAAF2;
+  border: 6px solid $colorWhite;
+  box-shadow: 0px 13px 11px 0px rgba(69,81,90,0.16);
+
+  opacity: 0;
+  transform: scale(.2) translate3d(0, -20px, 0);
+  transition: transform .4s cubic-bezier(0.230, 1.000, 0.320, 1.000), opacity .2s ease;
+}
+
+.slide--shown .point__point {
+  opacity: 1;
+  transform: scale(1) translate3d(0, 0, 0);
+}
+
+.point.point--one .point__point {
+  transition-delay: 1.2s;
+}
+
+.point.point--two .point__point {
+  transition-delay: .6s;
+}
+
+.point.point--three .point__point {
+  transition-delay: .8s;
+}
+
+.point.point--four .point__point {
+  transition-delay: 1s;
+}
+
+.point__title {
+  font-family:PostGrotesk-Medium;
+  line-height: 15px;
+  margin-bottom: 10px;
+}
+
+.point__description {
+  color: #5A6F7E;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.point__content {
+  width: 260px;
+  position: relative;
+  background: $colorWhite;
+  box-shadow: 0px 13px 11px 0px rgba(69,81,90,0.16);
+  border-radius: 8px;
+
+  opacity: 0;
+  transform: scale(1) translate3d(0, -20px, 0);
+  transition: transform .7s cubic-bezier(0.175, 0.885, 0.135, 1.425), opacity .3s ease;
+}
+
+.slide--shown .point__content {
+  opacity: 1;
+  transform: scale(1) translate3d(0, 0, 0);
+}
+
+.point.point--one .point__content  {
+  transition-delay: 1.3s;
+}
+
+.point.point--two .point__content  {
+  transition-delay: .7s;
+}
+
+.point.point--three .point__content  {
+  transition-delay: .9s;
+}
+
+.point.point--four .point__content  {
+  transition-delay: 1.1s;
+}
+
+.point__top {
+  padding: 30px 25px 20px 30px;
+}
+
+.point__footer {
+  font-family:PostGrotesk-Medium;
+  color: #68C0FF;
+  padding: 15px 30px;
+  background-color: #E6F2FD;
+  border-radius: 0px 0px 8px 8px
+}
+
+.point__avatar {
+  float: right;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $colorBg;
+
+  margin: 0 0 10px 10px;
+  background-size: cover;
+}
+
+.point.point--one .point__avatar {
+  background-image: url(../img/new-site/image-jarrad-dapp.png);
+}
+
+.point.point--two .point__avatar {
+  background-image: url(../img/new-site/image-etherplay-dapp.png);
+}
+
+.point.point--three .point__avatar {
+  background-image: url(../img/new-site/image-carl-dapp.png);
+}
+
+.point.point--four .point__avatar {
+  background-image: url(../img/new-site/image-moments-dapp.png);
+}
+
+@media (max-width: 1220px) {
+
+  .point.point--one {
+    top: 127px;
+    left: 20px
+  }
+
+  .point.point--four {
+    top: 425px;
+    left: 778px;
+  }
+
+}
+
+@media (max-width: 1140px) {
+
+  .slide.slide--three .slide__inner {
+    width: 860px;
+  }
+
+  .point.point--one {
+    top: 183px;
+    left: -30px;
+  }
+
+  .point.point--two {
+    top: 454px;
+    left: 243px;
+  }
+
+  .point.point--four {
+    top: 240px;
+    left: 630px;
+  }
+
+  .point.point--three {
+    display: none;
+  }
+}
+
+
+@media (max-width: 960px) {
+  .point.point--one {
+    top: 183px;
+    left: 20px;
+  }
+
+  .point.point--two {
+    top: 454px;
+    left: 243px;
+  }
+
+  .point.point--four {
+    top: 240px;
+    left: 580px;
+  }
+}
+
+@media (max-width: 922px) {
+
+  .slide.slide--three .slide__inner {
+    width: 728px;
+  }
+
+  .point.point--one {
+    top: 183px;
+    left: 20px;
+  }
+
+  .point.point--two {
+    top: 454px;
+    left: 170px;
+  }
+
+  .point.point--four {
+    top: 240px;
+    left: 450px;
+  }
+
+}
+
+@media (max-width: 767px) {
+
+  .slide.slide--three {
+    padding: 40px 0 40px
+  }
+
+  .slide.slide--three .slide__inner {
+    padding: 30px 0;
+    width: 100%;
+    border-radius: 0;
+    height: 570px;
+  }
+
+  .slide__circle-wrap {
+    top: 145%;
+  }
+
+  .point {
+    width: auto;
+  }
+
+  .point__top {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  .point__title {
+    margin: 0 10px 0 10px;
+  }
+
+  .point__content {
+    width: auto;
+    border-radius: 40px;
+  }
+
+  .point__avatar {
+    float: none;
+    margin: 0;
+  }
+
+  .point__description {
+    display: none;
+  }
+
+  .point__footer {
+    display: none;
+  }
+
+  .point.point--one {
+    top: 290px;
+    left: 20px;
+  }
+
+  .point.point--two {
+    top: 210px;
+    right: 50px;
+    left: auto;
+  }
+
+  .point.point--three {
+    top: 440px;
+    left: 70px;
+    display: block;
+}
+
+  .point.point--four {
+    top: 360px;
+    right: 20px;
+    left: auto;
+  }
+}
+
+@media (max-width: 860px) {
+
+}
