@@ -728,6 +728,10 @@ li.social-link a {
 .page__content.page__content--centered .page__text {
   max-width: 500px; }
 
+.page__fastlane-form-wrap {
+  height: 420px;
+  overflow: hidden; }
+
 .page h3 {
   font-family: "PostGrotesk-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
   font-size: 22px;
