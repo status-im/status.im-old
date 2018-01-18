@@ -1116,6 +1116,7 @@ li.social-link a {
   align-items: center; }
 
 .slide__inner {
+  text-align: center;
   width: 1080px;
   position: relative; }
 
@@ -2256,7 +2257,7 @@ input.email-form__input--email:disabled {
 
 .slide.slide--four .button {
   margin: 20px auto 0;
-  width: 170px; }
+  display: inline-block; }
 
 @media (max-width: 767px) {
   .slide.slide--four {
