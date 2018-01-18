@@ -490,6 +490,9 @@
             submitText: 'Obtén Acceso Temprano',
           },
         },
+        onFormReady: function translatePlaceholder($form) {
+          $form.find('[id^="email"].hs-input')[0].placeholder = 'Introduce tu correo electrónico';
+        },
       });
     </script>
     <!-- Google Analytics -->
