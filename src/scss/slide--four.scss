@@ -9,12 +9,13 @@
   border-radius: 8px;
   padding: 20px 0 0 0 ;
   height: auto;
+  text-align: center;
   width: auto;
 }
 
 .slide.slide--four .button {
   margin: 20px auto 0;
-  width: 170px;
+  display: inline-block;
 }
 
 @media (max-width: 767px) {
