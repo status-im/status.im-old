@@ -52,7 +52,7 @@
               </div>
               <div class="tagline">
                 <h2 class="tagline__title">Navega, chatea y realiza pagos seguros en la red descentralizada.</h2>
-                <div class="tagline__body">Status, la herramienta de descubrimiento de Ethereum..</div>
+                <div class="tagline__body">Status, la herramienta de descubrimiento de Ethereum.</div>
                 <div class="tagline__form">
                   <div class="email-form">
                     <div class="hbspt-form"></div>
@@ -481,7 +481,18 @@
         css: '',
         target: '.hbspt-form',
         portalId: '3954379',
-        formId: 'a3c9325b-999c-4a3d-a4c9-61889712dc95'
+        formId: 'a3c9325b-999c-4a3d-a4c9-61889712dc95',
+        translations: {
+          es: {
+            invalidEmail: 'Por favor ingresa un correo electrónico válido.',
+            invalidEmailFormat: 'El correo electrónico debe estar formateado correctamente.',
+            required: 'Por favor completa este campo requerido.',
+            submitText: 'Obtén Acceso Temprano',
+          },
+        },
+        onFormReady: function translatePlaceholder($form) {
+          $form.find('[id^="email"].hs-input')[0].placeholder = 'Introduce tu correo electrónico';
+        },
       });
     </script>
     <!-- Google Analytics -->

@@ -1007,7 +1007,13 @@ li.social-link a {
           .email-form .hbspt-form form .hs_email input[type="email"]:focus {
             background-color: rgba(255, 255, 255, 0.2);
             color: white; }
-          .email-form .hbspt-form form .hs_email input[type="email"]::-webkit-input-placeholder, .email-form .hbspt-form form .hs_email input[type="email"]::-moz-placeholder, .email-form .hbspt-form form .hs_email input[type="email"]:-ms-input-placeholder, .email-form .hbspt-form form .hs_email input[type="email"]:-moz-placeholder {
+          .email-form .hbspt-form form .hs_email input[type="email"]::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, 0.6); }
+          .email-form .hbspt-form form .hs_email input[type="email"]::-moz-placeholder {
+            color: rgba(255, 255, 255, 0.6); }
+          .email-form .hbspt-form form .hs_email input[type="email"]:-ms-input-placeholder {
+            color: rgba(255, 255, 255, 0.6); }
+          .email-form .hbspt-form form .hs_email input[type="email"]:-moz-placeholder {
             color: rgba(255, 255, 255, 0.6); }
       .email-form .hbspt-form form .hs-input {
         height: 45px;
