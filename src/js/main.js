@@ -112,14 +112,16 @@ function hideQRPopup() {
 }
 
 /*--- Language switcher ---*/
-languageSelect.addEventListener("change", function () {
-    let lang = languageSelect.options[languageSelect.selectedIndex].value
-    if (lang == "en") {
-      window.location.replace("https://status.im/")
-      return
+languageSelect.addEventListener('change', function changeLanguage() {
+    const lang = languageSelect.options[languageSelect.selectedIndex].value;
+    if (lang === 'en') {
+      window.location = '/';
+    } else if (lang === 'cn') {
+      window.location = '//cn.status.im';
+    } else {
+      window.location = '/' + lang + '.html';
     }
-    window.location.replace("https://status.im/" + lang + ".html")
-})
+});
 
 /*--- Utils ---*/
 function addClassToElement(element, className) {
