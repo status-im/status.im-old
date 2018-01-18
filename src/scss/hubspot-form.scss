@@ -79,9 +79,15 @@
             color: rgba(255, 255, 255, 1);
           }
 
-          &::-webkit-input-placeholder,
-          &::-moz-placeholder,
-          &:-ms-input-placeholder,
+          &::-webkit-input-placeholder {
+            color: rgba(255, 255, 255, .6);
+          }
+          &::-moz-placeholder {
+            color: rgba(255, 255, 255, .6);
+          }
+          &:-ms-input-placeholder {
+            color: rgba(255, 255, 255, .6);
+          }
           &:-moz-placeholder {
             color: rgba(255, 255, 255, .6);
           }
