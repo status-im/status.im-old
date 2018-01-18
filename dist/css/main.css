@@ -1116,7 +1116,6 @@ li.social-link a {
   align-items: center; }
 
 .slide__inner {
-  text-align: center;
   width: 1080px;
   position: relative; }
 
@@ -2253,6 +2252,7 @@ input.email-form__input--email:disabled {
   border-radius: 8px;
   padding: 20px 0 0 0;
   height: auto;
+  text-align: center;
   width: auto; }
 
 .slide.slide--four .button {
