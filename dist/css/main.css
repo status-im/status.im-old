@@ -419,10 +419,7 @@ li.social-link a {
   .qr-popup.qr-popup--shown {
     display: none; }
   .nav {
-    display: none; }
-  a.logo,
-  .shares {
-    width: auto; } }
+    display: none; } }
 
 @media (max-width: 840px) {
   .header__inner {
