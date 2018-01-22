@@ -477,18 +477,32 @@
     <![endif]-->
     <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
     <script>
+      const HUBSPOT_FORM_TRANSLATION_SPANISH = {
+        invalidEmail: 'Por favor ingresa un correo electrónico válido.',
+        invalidEmailFormat: 'El correo electrónico debe estar formateado correctamente.',
+        required: 'Por favor completa este campo requerido.',
+        submitText: 'Obtén Acceso Temprano',
+      };
       hbspt.forms.create({
         css: '',
         target: '.hbspt-form',
         portalId: '3954379',
         formId: 'a3c9325b-999c-4a3d-a4c9-61889712dc95',
         translations: {
-          es: {
-            invalidEmail: 'Por favor ingresa un correo electrónico válido.',
-            invalidEmailFormat: 'El correo electrónico debe estar formateado correctamente.',
-            required: 'Por favor completa este campo requerido.',
-            submitText: 'Obtén Acceso Temprano',
-          },
+          da: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          de: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          en: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          es: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          fi: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          fr: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          it: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          ja: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          nl: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          pl: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          'pt-br': HUBSPOT_FORM_TRANSLATION_SPANISH,
+          sv: HUBSPOT_FORM_TRANSLATION_SPANISH,
+          'zh-cn': HUBSPOT_FORM_TRANSLATION_SPANISH,
+          'zh-hk': HUBSPOT_FORM_TRANSLATION_SPANISH,
         },
         onFormReady: function translatePlaceholder($form) {
           $form.find('[id^="email"].hs-input')[0].placeholder = 'Introduce tu correo electrónico';
