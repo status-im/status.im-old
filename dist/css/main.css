@@ -246,10 +246,11 @@ a.logo {
 
 .logo__icon {
   height: 58px;
-  width: 58px;
+  min-width: 58px;
   background-image: url(../img/new-site/logo3.png);
   background-size: 58px;
-  background-position: left; }
+  background-position: left;
+  background-repeat: no-repeat; }
 
 .logo_text {
   margin: 2px 0 0 8px; }
