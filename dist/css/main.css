@@ -1125,7 +1125,7 @@ li.social-link a {
 
 .slide__header {
   margin: 0 auto;
-  width: 400px;
+  width: 530px;
   text-align: center; }
 
 .slide__title {
@@ -1167,7 +1167,7 @@ li.social-link a {
     padding: 0 20px;
     margin: 0 auto;
     width: auto;
-    max-width: 300px; }
+    max-width: 375px; }
   .slide__title {
     font-size: 19px;
     line-height: 26px;
@@ -1923,7 +1923,7 @@ input.email-form__input--email:disabled {
     -ms-flex-negative: 1;
     flex-shrink: 1; }
   .dapp__inner {
-    height: 260px; } }
+    height: 280px; } }
 
 @media (max-width: 767px) {
   .slide.slide--two {
@@ -1956,6 +1956,16 @@ input.email-form__input--email:disabled {
     -ms-transform: scale(1);
     transform: scale(1);
     opacity: 1; } }
+
+@media (max-width: 450px) {
+  .dapp__inner {
+    height: 280px; } }
+
+@media (max-width: 350px) {
+  .dapp {
+    width: 100%; }
+  .dapp__inner {
+    height: 200px; } }
 
 .slide.slide--three {
   display: -ms-flexbox;

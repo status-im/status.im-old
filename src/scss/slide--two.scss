@@ -197,7 +197,7 @@
   }
 
   .dapp__inner {
-    height: 260px;
+    height: 280px;
   }
 
 }
@@ -245,6 +245,25 @@
     height: 60px;
     transform: scale(1);
     opacity:1
+  }
+
+}
+
+@media (max-width: 450px) {
+
+  .dapp__inner {
+    height: 280px;
+  }
+
+}
+
+@media (max-width: 350px) {
+  .dapp {
+    width: 100%;
+  }
+
+  .dapp__inner {
+    height: 200px;
   }
 
 }
