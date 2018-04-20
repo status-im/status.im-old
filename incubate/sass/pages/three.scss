@@ -1,0 +1,56 @@
+.page--three {
+  padding-top: 90px;
+  padding-bottom: 60px;
+  text-align: center;
+
+  .page-inner {
+    padding-top: 85px;
+    padding-left: 15px;
+    padding-right: 15px;
+    max-width: 1145px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+.offer {
+  width: 45%;
+  text-align: left;
+  margin-bottom: 80px;
+
+  &__image {
+    margin-bottom: 40px;
+    img,svg {
+      height: 160px;
+      display: block;
+      width: auto;
+    }
+  }
+
+  &__title {
+    font-size: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+    letter-spacing: 0;
+    font-family: 'PostGrotesk-Medium', sans-serif;
+  }
+
+  .description {
+    margin-top: 35px;
+    line-height: 1.6;
+  }
+
+
+  .line {
+    display: block;
+    width: 100%;
+    background: #d8dadc;
+    height: 1px;
+    margin-bottom: 25px;
+  }
+
+}
+

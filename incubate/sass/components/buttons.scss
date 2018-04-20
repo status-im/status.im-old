@@ -1,0 +1,37 @@
+//
+// Buttons
+// ---------------------------
+
+button {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.btn {
+    min-width: 250px;
+    display: inline-block;
+    align-items: center;
+    height: 47px;
+    background-color: #27a7aa;
+    padding: 0 20px;
+    line-height: 50px;
+    font-size: 13px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 8px;
+    -webkit-appearance: none;
+    cursor: pointer;
+    text-align: center;
+    color: #fff;
+    font-family: 'PostGrotesk-Medium', sans-serif;
+    transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease;
+
+
+    &:hover {
+        background-color: #29b0b3;
+    }
+    &:focus {}
+    &.active, &:active {}
+    &.disabled, &[disabled] {}
+}

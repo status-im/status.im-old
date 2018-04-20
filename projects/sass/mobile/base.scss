@@ -1,0 +1,87 @@
+.container {
+  padding: 0 45px;
+
+  &-wrap {
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
+
+}
+
+br {
+  display: none;
+  &.mobile {
+    display: block;
+    @include mobile {
+      display: none;
+    }
+  }
+}
+
+.description {
+  line-height: 1.65;
+  @include mobile {
+    font-size: 16px;
+    line-height: 1.64;
+  }
+
+}
+
+.title {
+  @include mobile {
+    font-size: 35px;
+    line-height: 1;
+    margin-bottom: 20px;
+  }
+  @include small {
+    font-size: 24px;
+    margin-top: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+h2 {
+  @include mobile {
+    font-size: 32px;
+    line-height: 1;
+  }
+
+}
+
+.arrow-right {
+    line {
+      stroke: #4360DF;
+    }
+
+    polygon {
+      fill: #4360DF;
+    }
+}
+
+.arrow {
+  @include mobile {
+    display: none;
+  }
+}
+
+.more-link {
+  color: #4360DF;
+
+  @include mobile {
+    font-size: 12px;
+  }
+}
+
+br {
+  display: none;
+  &.phone {
+    @include mobile {
+      display: block;
+    }
+  }
+}

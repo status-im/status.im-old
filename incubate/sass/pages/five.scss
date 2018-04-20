@@ -1,0 +1,90 @@
+.page--five {
+  background: #fff;
+  position: relative;
+  height: 450px;
+
+
+  .description {
+    line-height: 1.7;
+    max-width: 400px;
+  }
+
+  .page {
+
+    &__section {
+
+      &--left {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        padding-top: 90px;
+      }
+
+      &--right {
+        width: 50%;
+        margin-left: auto;
+        height: 100%;
+      }
+
+    }
+
+  }
+
+  .wrapper {
+    padding: 0 15px;
+    max-width: 1190px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+
+}
+
+#map {
+  position: relative;
+  height: 100%;
+
+  img {
+    max-height: none;
+    display: block;
+  }
+
+  .dot {
+    width: 21px;
+    height: 25px;
+    background-image: url("../img/pages/page_five/dot.svg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &--one {
+      left: 15%;
+      top: 21%;
+    }
+
+    &--two {
+      left: 23.5%;
+      top: 36%;
+    }
+
+    &--three {
+      top: 43%;
+      left: 46%;
+    }
+
+    &--four {
+      top: 58%;
+      left: 25%;
+    }
+
+    &--five {
+      left: 30.5%;
+      top: 73%;
+    }
+
+  }
+}

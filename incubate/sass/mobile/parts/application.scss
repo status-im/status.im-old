@@ -1,0 +1,31 @@
+.page--application {
+  padding: 79px 45px 80px;
+  @include mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  h2 {
+    margin-bottom: 74px;
+  }
+  input[type="text"],
+  input[type="email"],
+  textarea {
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
+  }
+}
+.application .hs-dependent-field.hs_email, .application .hs-dependent-field.hs_firstname, .application .hs-dependent-field.hs_lastname, .application .hs-form-field.hs_email, .application .hs-form-field.hs_firstname, .application .hs-form-field.hs_lastname {
+  width: 42%;
+  @include mobile {
+    width: 100%;
+  }
+}
+.application .hs-dependent-field, .application .hs-form-field {
+  margin-bottom: 10px;
+  @include mobile {
+    margin-bottom: 15px;
+  }
+}
+
+

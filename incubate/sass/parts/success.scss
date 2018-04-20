@@ -1,0 +1,27 @@
+.page--success {
+  text-align: center;
+  padding: 160px 0 180px;
+  display: none;
+
+  &.show {
+    display: block;
+  }
+
+  .description {
+    margin: 25px 0 40px;
+  }
+  h2 {
+    line-height: 1;
+  }
+}
+
+.success {
+
+  &-icon {
+    margin: 0 auto 30px;
+    width: 39px;
+  }
+
+
+
+}

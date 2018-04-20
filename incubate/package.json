@@ -1,0 +1,27 @@
+{
+  "version": "1.0.0",
+  "description": "",
+  "license": "ISC",
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "browser-sync": "*",
+    "connect-history-api-fallback": "*",
+    "gulp": "^3.8.1",
+    "gulp-autoprefixer": "*",
+    "gulp-babel": "^7.0.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-connect": "*",
+    "gulp-cssmin": "*",
+    "gulp-include": "*",
+    "gulp-rigger": "*",
+    "gulp-sass": "*",
+    "gulp-uglify": "^2.0.1",
+    "gulp-watch": "*"
+  },
+  "dependencies": {
+    "browser-sync": "^2.9.3",
+    "gulp-rename": "^1.2.2",
+    "gulp-webserver": "^0.9.1"
+  }
+}

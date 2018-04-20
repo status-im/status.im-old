@@ -1,0 +1,46 @@
+.page {
+  &--one {
+    padding-top: 185px;
+    padding-bottom:  64px;
+    background: #4360DF;
+    .animation {
+      width: 450px;
+      height: 370px;
+      position: relative;
+      margin-right: 0;
+      margin-left: auto;
+
+      .block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: #fff;
+        opacity: 0;
+      }
+    }
+    .page-inner {
+      padding: 0 15px;
+      max-width: 1190px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+    .description {
+      max-width: 400px;
+    }
+    .page__section {
+      &--left {
+        width: 45%;
+      }
+      &--right {
+        width: 50%;
+      }
+    }
+  }
+  .arrow {
+    left: -9px;
+  }
+}

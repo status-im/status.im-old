@@ -1,0 +1,43 @@
+.page--one {
+  padding-top: 173px;
+  @include mobile {
+    padding-top: 118px;
+  }
+  .animation {
+    width: 100%;
+    height: 340px;
+    overflow: hidden;
+    @include mobile {
+      height: 116px;
+    }
+    img {
+      max-width: 100%;
+      max-height: none;
+    }
+  }
+  .page {
+    &-inner {
+      padding: 0 45px;
+      flex-direction: column-reverse;
+      @include mobile {
+        padding: 0 20px;
+      }
+    }
+    &__section {
+      &--left {
+        width: 100%;
+      }
+      &--right {
+        width: 100%;
+        margin-bottom: 70px;
+
+        @include mobile {
+          margin-bottom: 42px;
+        }
+      }
+    }
+  }
+  .description {
+    max-width: 500px;
+  }
+}

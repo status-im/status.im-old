@@ -1,0 +1,28 @@
+@import "components/mixins";
+@import "components/variables";
+@import "components/normilize";
+@import "components/buttons";
+@import "components/base";
+@import "components/helpers";
+@import "components/animate";
+@import "components/fonts";
+
+//PARTS
+@import "parts/header";
+@import "parts/footer";
+
+//PAGES
+@import "pages/one";
+@import "pages/two";
+
+
+.mobile {
+  @import "mobile/base";
+
+  //PARTS
+  @import "mobile/parts/header";
+
+  //PAGES
+  @import "mobile/pages/page_one";
+  @import "mobile/pages/page_two";
+}
