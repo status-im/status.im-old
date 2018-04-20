@@ -1,0 +1,39 @@
+@import "components/mixins";
+@import "components/variables";
+@import "components/normilize";
+@import "components/buttons";
+@import "components/base";
+@import "components/helpers";
+@import "components/animate";
+@import "components/fonts";
+
+//PARTS
+@import "parts/header";
+@import "parts/footer";
+@import "parts/application";
+@import "parts/success";
+//PAGES
+@import "pages/one";
+@import "pages/two";
+@import "pages/three";
+@import "pages/four";
+@import "pages/five";
+
+.mobile {
+  @media (max-width: 767px) {
+    min-width: 320px;
+    @import "components/swiper";
+  }
+  @media (max-width: 991px) {
+    @import "mobile/base";
+    //PARTS
+    @import "mobile/parts/header";
+    @import "mobile/parts/application";
+    //PAGES
+    @import "mobile/pages/one";
+    @import "mobile/pages/two";
+    @import "mobile/pages/three";
+    @import "mobile/pages/four";
+    @import "mobile/pages/five";
+  }
+}

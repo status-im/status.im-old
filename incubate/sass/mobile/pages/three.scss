@@ -1,0 +1,65 @@
+.page--three {
+  padding-top: 55px;
+  padding-bottom: 6px;
+  .page {
+    &-inner {
+      padding-left: 58px;
+      padding-right: 58px;
+      @include mobile {
+        padding-left: 0;
+        padding-right: 0;
+        max-width: none;
+        flex-wrap: nowrap;
+        justify-content: flex-start;
+      }
+    }
+  }
+}
+
+.offer {
+  .description {
+    margin-top: 25px;
+    margin-bottom: 10px;
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
+
+  &__image {
+    svg,img {
+      @include mobile {
+        height: 115px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .swiper-pagination {
+    position: absolute;
+    left: 50% !important;
+    transform: translate3d(-50%,0,0);
+    bottom: auto !important;
+    top: 0;
+    width: auto !important;
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+    justify-content: center;
+    &-bullet {
+      width: 6px;
+      height: 6px;
+      background-color: #62cbd3;
+      opacity: 1;
+      &-active {
+        width: 15px;
+        height: 15px;
+      }
+    }
+  }
+  .swiper-container {
+    position: relative;
+    padding-right: 75px;
+  }
+}

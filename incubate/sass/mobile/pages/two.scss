@@ -1,0 +1,23 @@
+.page--two {
+  padding-top: 55px;
+  padding-bottom: 55px;
+  @include mobile {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .description {
+    margin-top: 20px;
+    line-height: 1.6;
+    @include mobile {
+      text-align: left;
+      margin-left: 0;
+      margin-top: 15px;
+    }
+  }
+  h2 {
+    @include mobile {
+      text-align: left;
+      font-size: 37px;
+    }
+  }
+}

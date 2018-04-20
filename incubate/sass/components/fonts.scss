@@ -1,0 +1,21 @@
+
+
+@font-face {
+  font-family: PostGrotesk-Medium;
+  src: url($fontPath + 'PostGrotesk-Medium.eot');
+  src: url($fontPath + 'PostGrotesk-Medium.eot?#iefix') format("embedded-opentype"),
+  url($fontPath + 'PostGrotesk-Medium.woff') format("woff"),
+  url($fontPath + 'PostGrotesk-Medium.svg#PostGrotesk-Medium') format("svg");
+  font-weight: 400;
+  font-style: normal
+}
+
+@font-face {
+  font-family: PostGrotesk-Book;
+  src: url($fontPath + 'PostGrotesk-Book.eot');
+  src: url($fontPath + 'PostGrotesk-Book.eot?#iefix') format("embedded-opentype"),
+  url($fontPath + 'PostGrotesk-Book.woff') format("woff"),
+  url($fontPath + 'PostGrotesk-Book.svg#PostGrotesk-Book') format("svg");
+  font-weight: 400;
+  font-style: normal
+}

@@ -1,0 +1,88 @@
+.page {
+  &--one {
+    padding-top: 130px;
+    padding-bottom:  95px;
+    background: #62cbd3;
+
+    .animation {
+      width: 280px;
+      height: 280px;
+      position: relative;
+    }
+
+    .page-inner {
+      padding: 0 15px;
+      max-width: 1190px;
+      margin-left: auto;
+      margin-right: auto;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .title {
+      margin-top: 38px;
+      margin-bottom: 30px;
+    }
+    .description {
+      line-height: 1.69;
+      margin-bottom: 42px;
+      max-width: 400px;
+    }
+
+    .page__section {
+      &--left {
+
+      }
+      &--right {
+        width: 55%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+.circle {
+  width: 280px;
+  height: 280px;
+  position: absolute;
+  border-radius: 50%;
+
+  &--one {
+    background: #98dce2;
+    z-index: 5;
+  }
+
+  &--two {
+    background: #cceef0;
+    z-index: 4;
+  }
+
+  &--three {
+    background: #fff;
+    z-index: 3;
+  }
+
+  &--center {
+    background: #62cbd3;
+    z-index: 6;
+    transform: scale(1.05);
+  }
+
+  &--four {
+    background: #98dce2;
+    z-index: 5;
+  }
+
+  &--five {
+    background: #cceef0;
+    z-index: 4;
+  }
+
+  &--six {
+    background: #fff;
+    z-index: 3;
+  }
+
+}

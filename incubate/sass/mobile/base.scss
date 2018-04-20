@@ -1,0 +1,33 @@
+.container {
+  padding: 0 45px;
+
+  &-wrap {
+    @include mobile {
+      margin-bottom: 0;
+    }
+  }
+
+  @include mobile {
+    padding: 0 20px;
+  }
+}
+
+h2:not(.description) {
+  font-size: 37px;
+}
+
+br {
+  display: none;
+  &.mobile {
+    display: block;
+    @include mobile {
+      display: none;
+    }
+  }
+  &.phone {
+    display: none;
+    @include mobile {
+      display: block;
+    }
+  }
+}

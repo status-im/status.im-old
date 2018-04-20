@@ -1,0 +1,47 @@
+.page--five {
+  height: 404px;
+  @include mobile {
+    height:  auto;
+  }
+  .wrapper {
+    padding-left: 45px;
+    @include mobile {
+      padding: 0 20px;
+      text-align: center;
+    }
+  }
+  .page {
+    &__section {
+      &--left {
+        padding-top: 55px;
+        @include mobile {
+          padding-top: 55px;
+          position: relative;
+          padding-bottom: 55px;
+        }
+      }
+      &--right {
+        @include mobile {
+          width: 100%;
+        }
+      }
+    }
+  }
+  .description {
+    line-height: 1.45;
+    max-width: 240px;
+    @include mobile {
+      max-width: 400px;
+      margin-top: 17px;
+      text-align: center;
+      margin-left: auto;
+      margin-right: auto;
+
+    }
+  }
+  #map {
+    @include mobile {
+      height: 300px;
+    }
+  }
+}

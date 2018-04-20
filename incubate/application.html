@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Status incubate</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="icon" type="image/png" href="img/fav.png" sizes="32x32"/>
+    <link href="css/app.min.css" rel="stylesheet" type="text/css">
+</head>
+<body class="application-page">
+<div class="container-wrap">
+    <div class="header">
+        <div class="container">
+            <div class="header-section header-section--left">
+                <a href="/" class="logo">
+                    <span class="logo__icon"></span>
+                </a>
+                <span class="logo__text">
+                    <span class="logo__text--top">Status</span>
+                    <span class="logo__text--bottom">Incubate</span>
+                </span>
+            </div>
+            <div class="header-section header-section--right">
+                <ul class="header__home">
+                    <li>
+                        <a href="#" class="header__home-linkto">
+                            Status Home
+                        </a>
+                    </li>
+                </ul>
+
+                <ul class="header__social">
+                    <li class="header__social-link header__social-link--fb">
+                        <a href="https://www.facebook.com/ethstatus" target="_blank"></a>
+                    </li>
+                    <li class="header__social-link header__social-link--tw">
+                        <a href="https://twitter.com/ethstatus" target="_blank"></a>
+                    </li>
+                    <li class="header__social-link header__social-link--rd">
+                        <a href="https://chat.status.im/#/register" target="_blank"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="page page--application">
+        <h2>Application</h2>
+
+        <!--[if lte IE 8]>
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2-legacy.js"></script>
+        <![endif]-->
+        <script charset="utf-8" type="text/javascript" src="//js.hsforms.net/forms/v2.js"></script>
+        <script>
+		    hbspt.forms.create({
+			    portalId: "3954379",
+			    formId: "a86d2477-be4a-495f-8543-03a69f9a4921",
+			    css: "",
+			    cssClass: "application",
+			    submitButtonClass: 'btn',
+			    onFormReady: function ($form) {
+				    document.querySelectorAll('.hs-input').forEach(function (elem) {
+					    elem.addEventListener('focus', function () {
+						    elem.parentElement.parentElement.classList.add('hovered');
+					    });
+					    elem.addEventListener('blur', function () {
+						    if(elem.value.length > 0) return false;
+						    elem.parentElement.parentElement.classList.remove('hovered');
+					    })
+				    });
+				    var textAreas = [].slice.call(document.querySelectorAll('textarea'));
+				    function adjustHeight(textareaElement, minHeight) {
+					    var outerHeight = parseInt(window.getComputedStyle(textareaElement).height, 10);
+					    var diff = outerHeight - textareaElement.clientHeight;
+					    textareaElement.style.height = 0;
+					    textareaElement.style.height = Math.max(minHeight, textareaElement.scrollHeight + diff) + 'px';
+				    }
+				    textAreas.forEach(function(el) {
+					    el.style.overflowY = 'hidden';
+					    var minHeight = el.parentNode.scrollHeight;
+					    el.addEventListener('input', function() {
+						    adjustHeight(el, minHeight);
+					    });
+					    window.addEventListener('resize', function() {
+						    adjustHeight(el, minHeight);
+					    });
+					    adjustHeight(el, minHeight);
+				    });
+				    $form.on('change', 'input[type="file"]', function (e) {
+					    $(this).parent().siblings('label').html(this.files[0].name);
+				    })
+			    },
+			    onFormSubmit: function ($form) {
+				    var appPage = document.querySelector('.page--application');
+				    var successPage = document.querySelector('.page--success');
+				    appPage.classList.add('hide');
+				    successPage.classList.add('show');
+			    }
+		    });
+        </script>
+    </div>
+    <div class="page page--success">
+        <div class="success-icon">
+            <img src="img/pages/success/success.svg" alt="success">
+        </div>
+        <h2>Success!</h2>
+        <p class="description description--black">
+            Thanks for submitting your application!<br>
+            A confirmation email is on its way to your inbox.
+        </p>
+        <a href="https://status.im/" class="btn">Back to status home</a>
+    </div>
+</div>
+<div class="footer">
+    <div class="footer-inner">
+        <div class="footer-logo-wrap">
+            <div class="footer-logo-wrap__inner">
+                <div class="footer-logo"></div>
+                <div class="footer-address">Status Research & Development GmbH<br/>Baarerstrasse 10<br/>Zug, Switzerland
+                </div>
+            </div>
+        </div>
+        <div class="footer-table">
+            <div class="footer-table__column">
+                <h4 class="footer-header">Social links</h4>
+                <ul class="footer-list">
+                    <li class="footer-link footer-link--fb"><a href="https://www.facebook.com/ethstatus"
+                                                               target="_blank"><span class="footer-icon"></span><span
+                            class="footer-link-label">Facebook</span></a></li>
+                    <li class="footer-link footer-link--tw"><a href="https://twitter.com/ethstatus"
+                                                               target="_blank"><span class="footer-icon"></span><span
+                            class="footer-link-label">Twitter</span></a></li>
+                    <li class="footer-link footer-link--gh"><a href="https://github.com/status-im" target="_blank"><span
+                            class="footer-icon"></span><span class="footer-link-label">Github</span></a></li>
+                    <li class="footer-link footer-link--rd"><a href="https://www.reddit.com/r/statusim/"
+                                                               target="_blank"><span class="footer-icon"></span><span
+                            class="footer-link-label">Reddit</span></a></li>
+                    <li class="footer-link footer-link--yt"><a
+                            href="https://www.youtube.com/channel/UCFzdJTUdzqyX4e9dOW7UpPQ/" target="_blank"><span
+                            class="footer-icon"></span><span class="footer-link-label">YouTube</span></a></li>
+                </ul>
+            </div>
+            <div class="footer-table__column">
+                <h4 class="footer-header">More</h4>
+                <ul class="footer-list">
+                    <li class="footer-link"><a href="https://wiki.status.im" target="_blank">Status Wiki</a></li>
+                    <li class="footer-link"><a href="https://blog.status.im/?gi=73d6676925e9" target="_blank">Status
+                        Blog</a></li>
+                    <li class="footer-link"><a href="https://status.im/jobs.html" target="_blank">Jobs</a></li>
+                </ul>
+            </div>
+            <div class="footer-table__column">
+                <h4 class="footer-header">Language</h4>
+                <ul class="footer-list">
+                    <li class="footer-link">
+                        <select class="language-switcher" name="lang">
+                            <option value="en">English</option>
+                        </select>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script
+        src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+        crossorigin="anonymous"></script>
+<script src="build/all.min.js"></script>
+</body>
+</html>

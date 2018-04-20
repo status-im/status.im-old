@@ -1,0 +1,10 @@
+<svg id="Layer_1" data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150.00003">
+  <title>off1</title>
+  <g>
+    <rect x="160.85904" y="1299.01021" width="113.30157" height="70.71068" transform="translate(-717.60159 -1044.69228) rotate(-26.18685)" style="fill: #6eccd2"/>
+    <rect x="157.12834" y="1312.97289" width="129.64911" height="70.71067" transform="translate(-434.01955 -1199.08528) rotate(-12.33646)" style="fill: #9fdde1"/>
+    <path d="M183.03369,1305.13912h81.07543a9.4623,9.4623,0,0,1,9.4623,9.4623v135.5377a0,0,0,0,1,0,0h-100a0,0,0,0,1,0,0v-135.5377A9.4623,9.4623,0,0,1,183.03369,1305.13912Z" transform="translate(1450.13912 -123.57139) rotate(90)" style="fill: #cfeef0"/>
+    <path d="M123,80h27a0,0,0,0,1,0,0v40a0,0,0,0,1,0,0H122.9999A19.9999,19.9999,0,0,1,103,100.0001V100A20,20,0,0,1,123,80Z" style="fill: #6eccd2"/>
+    <circle cx="123" cy="100" r="10" style="fill: #cfeef0"/>
+  </g>
+</svg>
