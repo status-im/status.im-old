@@ -1,0 +1,78 @@
+.header {
+  height: 156px;
+
+  @include mobile {
+    height: 117px;
+  }
+
+  &-section {
+    &--right {
+
+    }
+  }
+
+  &__home {
+    display: none;
+  }
+
+  &__social {
+    padding-right: 0;
+    &-link {
+
+      a {
+        @include mobile {
+          width: 25px;
+          height: 25px;
+        }
+      }
+
+      @include mobile {
+        width: 30px;
+        height: 30px;
+        margin:  0 6px;
+      }
+
+      &--tw {
+
+        @include mobile {
+          margin-right: 0;
+        }
+
+      }
+
+      &:last-child {
+        margin-right: 0;
+
+        @include mobile {
+          display: none;
+        }
+
+      }
+    }
+  }
+
+}
+
+.logo {
+  width: 59px;
+  height: 59px;
+  margin-right: 7px;
+
+  &__text {
+    &--top {
+      @include mobile {
+        font-size: 16px;
+      }
+    }
+    &--bottom {
+      font-size: 12px;
+    }
+  }
+
+  @include mobile {
+    width: 47px;
+    height: 47px;
+    margin-right: 6px;
+  }
+
+}
