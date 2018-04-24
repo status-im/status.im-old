@@ -276,7 +276,16 @@ a.logo {
   display: flex;
   -ms-flex-align: center;
   align-items: center;
-  padding: 10px 15px 15px; }
+  padding: 10px 15px 0 15px; }
+
+.nav .nav__item-wrapper .nav__sub-menu {
+  opacity: 0;
+  transition: opacity .25s ease-in-out; }
+  .nav .nav__item-wrapper .nav__sub-menu .nav__sub-menu-item {
+    padding-top: 0; }
+
+.nav .nav__item-wrapper:hover .nav__sub-menu {
+  opacity: 1; }
 
 .header .nav a {
   color: white; }
@@ -346,8 +355,8 @@ a.logo {
   background-image: url(../img/new-site/u38.jpg); }
 
 .shares {
-  width: 260px;
-  height: 50px; }
+  height: 50px;
+  padding-left: 15px; }
 
 .social-links {
   display: -ms-flexbox;
@@ -398,6 +407,10 @@ li.social-link a {
 .social-link.social-link--rd a {
   background-color: #FF4501;
   background-image: url(../img/new-site/icon_rd.svg); }
+
+.social-link.social-link--md a {
+  background-color: #12100E;
+  background-image: url(../img/new-site/icon_md.svg); }
 
 .social-link:hover a {
   -ms-transform: scale(1.06);
@@ -454,6 +467,10 @@ li.social-link a {
   .shares .social-links li.social-link {
     margin: 0 0 0 7px; }
   .header .social-link.social-link--fb {
+    display: none; } }
+
+@media (max-width: 550px) {
+  .header .social-link.social-link--tw {
     display: none; } }
 
 .the-iphone {
