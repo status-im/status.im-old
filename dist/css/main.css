@@ -1077,10 +1077,19 @@ li.social-link a {
   margin-bottom: 32px; }
   .event-form .hbspt-form * {
     font-size: 16px; }
+  .event-form,
+  .event-form .hbspt-form,
+  .event-form .hbspt-form select {
+    max-width: 100%; }
   .event-form .hbspt-form {
     text-align: left; }
+    .event-form .hbspt-form select {
+      border: solid 1px #eee;
+      border-radius: 4px;
+      padding: 4px; }
     .event-form .hbspt-form .hs-form-required {
-      color: red; }
+      color: red;
+      margin-left: 3px; }
     .event-form .hbspt-form .hs-error-msgs label {
       color: red;
       font-size: 14px; }
