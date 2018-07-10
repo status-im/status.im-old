@@ -156,11 +156,24 @@
     font-size: 16px;
   }
 
+  &,
+  .hbspt-form,
+  .hbspt-form select {
+    max-width: 100%
+  }
+
   .hbspt-form {
     text-align: left;
 
+    select {
+      border: solid 1px #eee;
+      border-radius: 4px;
+      padding: 4px;
+    }
+
     .hs-form-required {
       color: red;
+      margin-left: 3px;
     }
 
     .hs-error-msgs label {
