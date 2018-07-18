@@ -2821,6 +2821,123 @@ input.email-form__input--email:disabled {
   .messages {
     width: auto; } }
 
+.slide.podcast-slide .slide__inner {
+  background-color: #4957B8;
+  background-image: url(../img/podcast/podcast-bars.png);
+  background-position: right 120px;
+  background-repeat: no-repeat;
+  background-size: 600px 600px;
+  margin: 0;
+  max-width: 1080px;
+  padding: 0 140px;
+  position: relative;
+  transform: translate3d(0, 0, 0);
+  transition: transform .6s ease, opacity .3s ease;
+  width: 100%; }
+  .slide.podcast-slide .slide__inner .header {
+    position: relative;
+    top: initial;
+    bottom: initial;
+    padding: 30px 0px; }
+    .slide.podcast-slide .slide__inner .header .nav .nav__item {
+      font-size: 12px; }
+    .slide.podcast-slide .slide__inner .header .logo {
+      -ms-flex-align: center;
+      align-items: center;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-direction: row;
+      flex-direction: row;
+      -ms-flex-pack: start;
+      justify-content: flex-start; }
+      .slide.podcast-slide .slide__inner .header .logo .logo__icon {
+        background-image: url(../img/podcast/logo-white-circle.svg);
+        background-repeat: no-repeat;
+        background-size: 100% 100%;
+        height: 34px;
+        text-align: right;
+        width: 34px;
+        min-width: 34px; }
+      .slide.podcast-slide .slide__inner .header .logo .logo_text {
+        margin-left: 12px; }
+        .slide.podcast-slide .slide__inner .header .logo .logo_text .logo__title {
+          font-size: 18px;
+          font-weight: 600;
+          letter-spacing: 0; }
+  .slide.podcast-slide .slide__inner .intro {
+    color: white;
+    font-family: "PostGrotesk-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+    padding: 100px 0 140px 0;
+    position: relative; }
+    .slide.podcast-slide .slide__inner .intro .intro__title {
+      font-size: 48px;
+      font-weight: 900; }
+    .slide.podcast-slide .slide__inner .intro .intro__subtitle {
+      font-size: 26px;
+      margin-top: 18px; }
+    .slide.podcast-slide .slide__inner .intro .intro__body {
+      color: white;
+      font-size: 14px;
+      font-weight: 100;
+      line-height: 18px;
+      margin-top: 64px;
+      max-width: 300px; }
+    .slide.podcast-slide .slide__inner .intro .intro__form .intro__form--subscribe {
+      background-color: #68c0f8;
+      border-radius: 5px;
+      color: white;
+      font-family: "PostGrotesk-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 12px;
+      letter-spacing: 2px;
+      margin-top: 20px;
+      padding: 12px 18px;
+      text-transform: uppercase; }
+  .slide.podcast-slide .slide__inner .podcast-bars {
+    background-image: url(../img/podcast/podcast-bars.png); }
+
+.slide.podcast-slide .podcast-wrap {
+  background: white;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  max-width: 1080px;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  padding: 100px 20px; }
+  .slide.podcast-slide .podcast-wrap .podcast {
+    margin: 0;
+    border-radius: 0;
+    height: auto;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 5px 20px 5px 10px;
+    max-width: 900px; }
+    .slide.podcast-slide .podcast-wrap .podcast .podcast__item:not(:first-child) {
+      margin-top: 16px; }
+    .slide.podcast-slide .podcast-wrap .podcast .podcast__item .podcast__title {
+      font-size: 24px;
+      font-weight: 900; }
+    .slide.podcast-slide .podcast-wrap .podcast .podcast__item .podcast__description {
+      color: #999;
+      font-size: 12px;
+      font-weight: 400;
+      margin-top: 8px; }
+    .slide.podcast-slide .podcast-wrap .podcast .podcast__item .podcast__play-button {
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 100%;
+      border: 3px solid #4957B8;
+      color: #4957B8;
+      display: -ms-flexbox;
+      display: flex;
+      font-size: 28px;
+      height: 32px;
+      -ms-flex-pack: center;
+      justify-content: center;
+      margin-top: 16px;
+      padding: 8px 6px 8px 10px;
+      width: 32px; }
+
 .footer {
   position: fixed;
   width: 100%;
