@@ -21,13 +21,13 @@ gulp.task('serve', ['sass', 'imagemin', 'js'], function() {
 
     browserSync.init({
         server: "./"
-    })
+    });
 
     gulp.watch("src/scss/*.scss", ['sass']);
     gulp.watch("src/js/*.js", ['js']);
     gulp.watch("src/img/**/*", ['imagemin']);
     gulp.watch("./*.html").on('change', browserSync.reload);
-})
+});
 
 gulp.task('js', function () {
   return gulp.src('src/**/*.js', {read: false})
@@ -42,7 +42,7 @@ gulp.task('js', function () {
               .pipe(sourcemaps.write('./'))
               .pipe(gulp.dest('dist'))
               .pipe(browserSync.stream());
-})
+});
 
 gulp.task('sass', function() {
     return gulp.src("src/scss/main.scss")
@@ -51,16 +51,16 @@ gulp.task('sass', function() {
                .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
                .pipe(gulp.dest("dist/css"))
                .pipe(browserSync.stream());
-})
+});
 
 gulp.task('imagemin', function() {
   gulp.src('src/img/**/*')
       .pipe(imagemin())
       .pipe(gulp.dest('dist/img'))
-})
+});
 
 gulp.task('cleanUp', function() {
   del.sync('dist/*')
-})
+});
 
 gulp.task('default', ['cleanUp', 'serve']);
