@@ -1,19 +1,19 @@
-const gulp         = require('gulp');
-const browserSync  = require('browser-sync').create();
-const sass         = require('gulp-sass');
-const autoprefixer = require('gulp-autoprefixer');
+var gulp         = require('gulp');
+var browserSync  = require('browser-sync').create();
+var sass         = require('gulp-sass');
+var autoprefixer = require('gulp-autoprefixer');
 
-const browserify   = require('browserify');
-const source       = require('vinyl-source-stream');
-const streamify    = require('gulp-streamify');
-const babel        = require('gulp-babel');
-const tap          = require('gulp-tap');
-const buffer       = require('gulp-buffer');
-const sourcemaps   = require('gulp-sourcemaps');
+var browserify   = require('browserify');
+var source       = require('vinyl-source-stream');
+var streamify    = require('gulp-streamify');
+var babel        = require('gulp-babel');
+var tap          = require('gulp-tap');
+var buffer       = require('gulp-buffer');
+var sourcemaps   = require('gulp-sourcemaps');
 
-const del          = require('del');
-const gutil        = require('gulp-util');
-const uglify       = require('gulp-uglify');
+var del          = require('del');
+var gutil        = require('gulp-util');
+var uglify       = require('gulp-uglify');
 
 var imagemin     = require('gulp-imagemin');
 
@@ -38,7 +38,7 @@ gulp.task('sass', function() {
     .on('error', gutil.log)
     .pipe(autoprefixer({ browsers: ['last 3 versions'], cascade: false }))
     .pipe(gulp.dest("dist/css"))
-.pipe(browserSync.stream());
+    .pipe(browserSync.stream());
 });
 
 gulp.task('imagemin', function() {
