@@ -152,14 +152,25 @@
   background-color: #4A5C69;
   color: $colorWhite
 }
+
+.button.button--secondary.button--page.button--page--github {
+  background-color: #4A5C69;
+}
+
 .button.button--secondary.button--page.button--page--slack {
   background-color: #E3306D
 }
+
 .button.button--secondary.button--page.button--page--wiki {
   background-color: #4A55BF
 }
 
 .button.button--secondary.button--page:hover {
+  opacity: .8;
+  background-color: #4A5C69;
+}
+
+.button.button--secondary.button--page.button--page--github:hover {
   opacity: .8;
   background-color: #4A5C69;
 }
