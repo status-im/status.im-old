@@ -1,10 +1,10 @@
 .email-form {
   display: flex;
-  width: 400px;
+  //width: 400px;
   position: relative;
 
   .hbspt-form {
-    width: 400px;
+    //width: 400px;
 
     .submitted-message {
       padding: 12px;
@@ -15,7 +15,7 @@
 
     form {
       display: flex;
-      width: 400px;
+      //width: 400px;
       position: relative;
 
       .hs-error-msgs {
@@ -101,7 +101,7 @@
       }
 
       .hs_submit {
-        width: 220px;
+        //width: 220px;
         box-sizing: border-box;
         flex-shrink: 0;
         flex-grow: 0;

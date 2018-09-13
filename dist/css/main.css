@@ -974,111 +974,106 @@ li.social-link a {
 .email-form {
   display: -ms-flexbox;
   display: flex;
-  width: 400px;
   position: relative; }
-  .email-form .hbspt-form {
-    width: 400px; }
-    .email-form .hbspt-form .submitted-message {
-      padding: 12px;
-      border-radius: 8px;
-      background-color: rgba(255, 255, 255, 0.12);
-      color: white; }
-    .email-form .hbspt-form form {
-      display: -ms-flexbox;
-      display: flex;
-      width: 400px;
-      position: relative; }
-      .email-form .hbspt-form form .hs-error-msgs {
-        position: absolute;
-        color: rgba(255, 255, 255, 0.5);
-        line-height: 14px;
-        transform: translate3d(0, 10px, 0);
-        transition: transform .2s ease, opacity .2s ease; }
-        .email-form .hbspt-form form .hs-error-msgs a {
-          color: white; }
-        .email-form .hbspt-form form .hs-error-msgs li {
-          text-align: left; }
-          .email-form .hbspt-form form .hs-error-msgs li label {
-            font-size: 14px;
-            font-family: 'PostGrotesk-Book', sans-serif; }
-      .email-form .hbspt-form form .hs_error_rollup {
+  .email-form .hbspt-form .submitted-message {
+    padding: 12px;
+    border-radius: 8px;
+    background-color: rgba(255, 255, 255, 0.12);
+    color: white; }
+  .email-form .hbspt-form form {
+    display: -ms-flexbox;
+    display: flex;
+    position: relative; }
+    .email-form .hbspt-form form .hs-error-msgs {
+      position: absolute;
+      color: rgba(255, 255, 255, 0.5);
+      line-height: 14px;
+      transform: translate3d(0, 10px, 0);
+      transition: transform .2s ease, opacity .2s ease; }
+      .email-form .hbspt-form form .hs-error-msgs a {
+        color: white; }
+      .email-form .hbspt-form form .hs-error-msgs li {
+        text-align: left; }
+        .email-form .hbspt-form form .hs-error-msgs li label {
+          font-size: 14px;
+          font-family: 'PostGrotesk-Book', sans-serif; }
+    .email-form .hbspt-form form .hs_error_rollup {
+      display: none; }
+    .email-form .hbspt-form form .hs_email {
+      width: 215px; }
+      .email-form .hbspt-form form .hs_email > label {
         display: none; }
-      .email-form .hbspt-form form .hs_email {
-        width: 215px; }
-        .email-form .hbspt-form form .hs_email > label {
-          display: none; }
-        .email-form .hbspt-form form .hs_email,
-        .email-form .hbspt-form form .hs_email input[type="email"] {
-          width: 215px;
-          margin: 0 10px 0 0; }
-        .email-form .hbspt-form form .hs_email input[type="email"] {
-          text-align: left;
-          background-color: rgba(255, 255, 255, 0.12);
-          color: white;
-          width: 215px;
-          padding: 0 15px;
-          font-family: 'PostGrotesk-Book', sans-serif;
-          box-sizing: border-box;
-          transition: background-color .2s ease;
-          font-weight: 400;
-          font-size: 15px; }
-          .email-form .hbspt-form form .hs_email input[type="email"]:disabled {
-            color: rgba(255, 255, 255, 0.4);
-            background-color: rgba(255, 255, 255, 0.12);
-            opacity: 1; }
-          .email-form .hbspt-form form .hs_email input[type="email"]:focus {
-            background-color: rgba(255, 255, 255, 0.2);
-            color: white; }
-          .email-form .hbspt-form form .hs_email input[type="email"]::-webkit-input-placeholder {
-            color: rgba(255, 255, 255, 0.6); }
-          .email-form .hbspt-form form .hs_email input[type="email"]::-moz-placeholder {
-            color: rgba(255, 255, 255, 0.6); }
-          .email-form .hbspt-form form .hs_email input[type="email"]:-ms-input-placeholder {
-            color: rgba(255, 255, 255, 0.6); }
-          .email-form .hbspt-form form .hs_email input[type="email"]:-moz-placeholder {
-            color: rgba(255, 255, 255, 0.6); }
-      .email-form .hbspt-form form .hs-input {
-        height: 45px;
-        line-height: 45px;
-        border-radius: 8px; }
-      .email-form .hbspt-form form .hs_submit {
-        width: 220px;
+      .email-form .hbspt-form form .hs_email,
+      .email-form .hbspt-form form .hs_email input[type="email"] {
+        width: 215px;
+        margin: 0 10px 0 0; }
+      .email-form .hbspt-form form .hs_email input[type="email"] {
+        text-align: left;
+        background-color: rgba(255, 255, 255, 0.12);
+        color: white;
+        width: 215px;
+        padding: 0 15px;
+        font-family: 'PostGrotesk-Book', sans-serif;
         box-sizing: border-box;
+        transition: background-color .2s ease;
+        font-weight: 400;
+        font-size: 15px; }
+        .email-form .hbspt-form form .hs_email input[type="email"]:disabled {
+          color: rgba(255, 255, 255, 0.4);
+          background-color: rgba(255, 255, 255, 0.12);
+          opacity: 1; }
+        .email-form .hbspt-form form .hs_email input[type="email"]:focus {
+          background-color: rgba(255, 255, 255, 0.2);
+          color: white; }
+        .email-form .hbspt-form form .hs_email input[type="email"]::-webkit-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .email-form .hbspt-form form .hs_email input[type="email"]::-moz-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .email-form .hbspt-form form .hs_email input[type="email"]:-ms-input-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+        .email-form .hbspt-form form .hs_email input[type="email"]:-moz-placeholder {
+          color: rgba(255, 255, 255, 0.6); }
+    .email-form .hbspt-form form .hs-input {
+      height: 45px;
+      line-height: 45px;
+      border-radius: 8px; }
+    .email-form .hbspt-form form .hs_submit {
+      box-sizing: border-box;
+      -ms-flex-negative: 0;
+      flex-shrink: 0;
+      -ms-flex-positive: 0;
+      flex-grow: 0; }
+      .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button {
+        display: block;
+        height: 45px;
+        line-height: 43px;
+        padding: 0 20px;
+        font-family: "PostGrotesk-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+        font-size: 13px;
+        text-transform: uppercase;
+        text-align: center;
+        letter-spacing: 1px;
+        color: white;
+        background-color: #68c0f8;
+        border-radius: 8px;
+        transform: translate3d(0, 0, 0) scale(1);
+        transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease;
+        -webkit-appearance: none;
+        cursor: pointer;
+        width: auto;
         -ms-flex-negative: 0;
         flex-shrink: 0;
         -ms-flex-positive: 0;
         flex-grow: 0; }
-        .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button {
-          display: block;
-          height: 45px;
-          line-height: 43px;
-          padding: 0 20px;
-          font-family: "PostGrotesk-Medium", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-          font-size: 13px;
-          text-transform: uppercase;
-          text-align: center;
-          letter-spacing: 1px;
-          color: white;
-          background-color: #68c0f8;
-          border-radius: 8px;
-          transform: translate3d(0, 0, 0) scale(1);
-          transition: transform .1s ease, box-shadow .2s ease, background-color .2s ease;
-          -webkit-appearance: none;
-          cursor: pointer;
-          width: auto;
-          -ms-flex-negative: 0;
-          flex-shrink: 0;
-          -ms-flex-positive: 0;
-          flex-grow: 0; }
-          .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:disabled {
-            cursor: default;
-            color: rgba(255, 255, 255, 0.5); }
-            .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:disabled:hover {
-              background-color: #68c0f8; }
-          .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:active {
-            transform: translate3d(0, 0, 0) scale(0.99); }
-          .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:hover {
-            background-color: #84cfff; }
+        .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:disabled {
+          cursor: default;
+          color: rgba(255, 255, 255, 0.5); }
+          .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:disabled:hover {
+            background-color: #68c0f8; }
+        .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:active {
+          transform: translate3d(0, 0, 0) scale(0.99); }
+        .email-form .hbspt-form form .hs_submit input[type="submit"].hs-button:hover {
+          background-color: #84cfff; }
 
 .event-form {
   margin-bottom: 32px; }
@@ -1388,7 +1383,6 @@ li.social-link a {
 .email-form {
   display: -ms-flexbox;
   display: flex;
-  width: 400px;
   position: relative; }
 
 .email-form.email-form--error .email-form__inner {
