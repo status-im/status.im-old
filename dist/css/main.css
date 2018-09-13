@@ -412,6 +412,10 @@ li.social-link a {
   background-color: #12100E;
   background-image: url(../img/new-site/icon_md.svg); }
 
+.social-link.social-link--ghost a {
+  background-color: #E8E9EB;
+  background-image: url(../img/new-site/icon_ghost.jpg); }
+
 .social-link:hover a {
   -ms-transform: scale(1.06);
   transform: scale(1.06); }
