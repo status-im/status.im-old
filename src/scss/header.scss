@@ -253,11 +253,11 @@ li.social-link a {
 
   .header {
     top: 0;
+    padding: 40px 30px 40px 40px;
   }
 
   .header__inner {
     width: 100%;
-    margin: 40px;
     align-items: center;
   }
 
@@ -266,6 +266,9 @@ li.social-link a {
     width: 100%;
   }
 
+  .header .social-link.social-link--fb {
+    display: none;
+  }
 }
 
 @media (max-width: 960px) {
@@ -280,14 +283,18 @@ li.social-link a {
 }
 
 @media (max-width: 840px) {
-  .header__inner {
-    margin: 30px;
+  .header {
+    padding: 30px 20px 30px 30px;
   }
+
 }
 
 @media (max-width: 767px) {
+  .header {
+    padding: 20px 20px 20px 17px;
+  }
+
   .header__inner {
-    margin: 20px 20px 20px 17px;
     align-items: flex-start;
   }
 
